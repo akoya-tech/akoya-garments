@@ -1,7 +1,7 @@
 # ⚠️ نیچے والی لائن میں اپنا GitHub یوزرنیم اور ریپوزٹری کا نام لکھیں
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
+  repo:    akoya-tech/akoya-garments
   branch: main
 
 # نئی اپلوڈ شدہ تصویریں اسی فولڈر میں محفوظ ہوں گی
