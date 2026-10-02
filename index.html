@@ -43,7 +43,7 @@
 <body class="text-gray-800 antialiased selection:bg-rose-200 selection:text-rose-900">
 
     <!-- Top Announcement Bar -->
-    <div class="bg-gradient-to-r from-rose-500 via-pink-500 to-rose-600 text-white text-xs md:text-sm py-2 px-4 text-center font-medium shadow-sm">
+    <div data-key="announcement" class="bg-gradient-to-r from-rose-500 via-pink-500 to-rose-600 text-white text-xs md:text-sm py-2 px-4 text-center font-medium shadow-sm">
         ✨ تمام ڈریسز صرف <span class="font-bold underline decoration-2">$50</span> میں! ہر خریداری پر خصوصی معیار کی ضمانت ✨
     </div>
 
@@ -90,20 +90,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-center md:text-right">
-                    <span class="inline-block px-4 py-1.5 bg-rose-100 text-rose-700 rounded-full text-xs md:text-sm font-semibold tracking-wide">
+                    <span data-key="hero_badge" class="inline-block px-4 py-1.5 bg-rose-100 text-rose-700 rounded-full text-xs md:text-sm font-semibold tracking-wide">
                         جدید اور خوبصورت ڈیزائنز 🌸
                     </span>
                     <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-                        بچوں اور خواتین کے لیے <span class="bg-gradient-to-r from-rose-600 to-pink-500 bg-clip-text text-transparent">انتہائی خوبصورت</span> ڈریسز
+                        <span data-key="hero_title_start">بچوں اور خواتین کے لیے</span> <span data-key="hero_title_highlight" class="bg-gradient-to-r from-rose-600 to-pink-500 bg-clip-text text-transparent">انتہائی خوبصورت</span> <span data-key="hero_title_end">ڈریسز</span>
                     </h1>
-                    <p class="text-gray-600 text-base md:text-lg leading-relaxed max-w-xl">
-                        اکویا گارمنٹس لایا ہے بہترین کپڑا اور دلکش ڈیزائنز۔ اب تمام پریمیم ڈریسز حاصل کریں صرف **$50** میں۔ واٹس ایپ پر ایک کلک سے آرڈر کریں۔
+                    <p data-key="hero_text" class="text-gray-600 text-base md:text-lg leading-relaxed max-w-xl">
+                        اکویا گارمنٹس لایا ہے بہترین کپڑا اور دلکش ڈیزائنز۔ اب تمام پریمیم ڈریسز حاصل کریں صرف $50 میں۔ واٹس ایپ پر ایک کلک سے آرڈر کریں۔
                     </p>
                     <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
                         <a href="#products" class="px-8 py-3.5 bg-rose-600 hover:bg-rose-700 text-white font-semibold rounded-2xl shadow-lg shadow-rose-200 hover:shadow-xl transition-all transform hover:-translate-y-0.5">
                             کلیکشن دیکھیں
                         </a>
-                        <a href="https://wa.me/923218800544?text=سلام!%20مجھے%20اکویا%20گارمنٹس%20کے%20ڈریسز%20کے%20بارے%20میں%20معلومات%20چاہییں۔" target="_blank" class="px-8 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-2xl shadow-lg shadow-emerald-200 hover:shadow-xl transition-all flex items-center gap-2">
+                        <a href="#" data-wa="سلام! مجھے اکویا گارمنٹس کے ڈریسز کے بارے میں معلومات چاہییں۔" target="_blank" class="px-8 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-2xl shadow-lg shadow-emerald-200 hover:shadow-xl transition-all flex items-center gap-2">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                             براہ راست بات کریں
                         </a>
@@ -114,18 +114,18 @@
                 <div class="relative grid grid-cols-2 gap-4">
                     <div class="space-y-4">
                         <div class="rounded-3xl overflow-hidden shadow-lg border-2 border-white transform -rotate-2 hover:rotate-0 transition duration-300">
-                            <img src="220011125_lbl_bk.webp" alt="لائٹ بلیو ڈریس" class="w-full h-48 md:h-64 object-cover object-top hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x500/e0f2fe/0369a1?text=Light+Blue+Dress'">
+                            <img data-hero="0" src="220011125_lbl_bk.webp" alt="لائٹ بلیو ڈریس" class="w-full h-48 md:h-64 object-cover object-top hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x500/e0f2fe/0369a1?text=Light+Blue+Dress'">
                         </div>
                         <div class="rounded-3xl overflow-hidden shadow-lg border-2 border-white transform rotate-2 hover:rotate-0 transition duration-300">
-                            <img src="219512685_red_bk.webp" alt="خوبصورت ریڈ ڈریس" class="w-full h-40 md:h-52 object-cover object-top hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x500/fee2e2/b91c1c?text=Red+Dress'">
+                            <img data-hero="1" src="219512685_red_bk.webp" alt="خوبصورت ریڈ ڈریس" class="w-full h-40 md:h-52 object-cover object-top hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x500/fee2e2/b91c1c?text=Red+Dress'">
                         </div>
                     </div>
                     <div class="space-y-4 pt-6">
                         <div class="rounded-3xl overflow-hidden shadow-lg border-2 border-white transform rotate-3 hover:rotate-0 transition duration-300">
-                            <img src="219996065_wht_bk.webp" alt="وائٹ لیس ڈریس" class="w-full h-40 md:h-52 object-cover object-top hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x500/f3f4f6/374151?text=White+Lace+Dress'">
+                            <img data-hero="2" src="219996065_wht_bk.webp" alt="وائٹ لیس ڈریس" class="w-full h-40 md:h-52 object-cover object-top hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x500/f3f4f6/374151?text=White+Lace+Dress'">
                         </div>
                         <div class="rounded-3xl overflow-hidden shadow-lg border-2 border-white transform -rotate-3 hover:rotate-0 transition duration-300">
-                            <img src="219794136_lpi_in.webp" alt="فلورل پنک میکس" class="w-full h-48 md:h-64 object-cover object-top hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x500/fce7f3/be185d?text=Floral+Pink+Maxi'">
+                            <img data-hero="3" src="219794136_lpi_in.webp" alt="فلورل پنک میکس" class="w-full h-48 md:h-64 object-cover object-top hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x500/fce7f3/be185d?text=Floral+Pink+Maxi'">
                         </div>
                     </div>
                 </div>
@@ -167,10 +167,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-rose-600 font-semibold text-sm uppercase tracking-wider">خاص کلیکشن</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">ہمارے مقبول اور دلکش ڈریسز</h2>
+                <h2 data-key="products_title" class="text-3xl md:text-4xl font-extrabold text-gray-900">ہمارے مقبول اور دلکش ڈریسز</h2>
                 <div class="w-20 h-1 bg-rose-500 mx-auto rounded-full"></div>
-                <p class="text-gray-600 text-sm md:text-base pt-2">
-                    ہر لباس کی قیمت صرف <span class="font-bold text-rose-600">$50 USD</span> ہے! اپنی پسند کے ڈریس کو واٹس ایپ پر فوراً آرڈر کریں۔
+                <p data-key="products_subtitle" class="text-gray-600 text-sm md:text-base pt-2">
+                    ہر لباس کی قیمت صرف $50 USD ہے! اپنی پسند کے ڈریس کو واٹس ایپ پر فوراً آرڈر کریں۔
                 </p>
             </div>
 
@@ -192,9 +192,9 @@
                 ہمارا نمائندہ واٹس ایپ پر ہر وقت آپ کی رہنمائی اور سائز سے متعلق مدد کے لیے موجود ہے۔
             </p>
             <div class="pt-2">
-                <a href="https://wa.me/923218800544?text=سلام!%20مجھے%20اکویا%20گارمنٹس%20سے%20خریداری%20کرنی%20ہے۔" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-emerald-700 font-bold rounded-2xl hover:bg-emerald-50 transition shadow-xl text-lg">
+                <a href="#" data-wa="سلام! مجھے اکویا گارمنٹس سے خریداری کرنی ہے۔" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-emerald-700 font-bold rounded-2xl hover:bg-emerald-50 transition shadow-xl text-lg">
                     <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
-                    واٹس ایپ نمبر: 03218800544
+                    واٹس ایپ نمبر: <span data-key="whatsapp_display">03218800544</span>
                 </a>
             </div>
         </div>
@@ -212,7 +212,7 @@
                         </div>
                         <span class="text-2xl font-bold text-white">اکویا گارمنٹس</span>
                     </div>
-                    <p class="text-sm text-gray-400 leading-relaxed">
+                    <p data-key="footer_about" class="text-sm text-gray-400 leading-relaxed">
                         ہماری ترجیح بہترین معیار اور خوبصورت ڈیزائنز ہیں۔ بچوں کے پریمیم ڈریسز کا بھروسہ مند نام۔
                     </p>
                 </div>
@@ -223,15 +223,15 @@
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-phone text-rose-400"></i>
-                            <span dir="ltr">+92 321 8800544</span>
+                            <span dir="ltr" data-key="phone_display">+92 321 8800544</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-brands fa-whatsapp text-emerald-400"></i>
-                            <span>03218800544</span>
+                            <span data-key="whatsapp_display">03218800544</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-envelope text-rose-400"></i>
-                            <span>info@akoyagarments.com</span>
+                            <span data-key="email">info@akoyagarments.com</span>
                         </li>
                     </ul>
                 </div>
@@ -254,7 +254,7 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/923218800544?text=سلام!%20میں%20اکویا%20گارمنٹس%20کے%20بارے%20میں%20معلومات%20لیتا%20چاہتا%20ہوں۔" target="_blank" class="fixed bottom-6 left-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-4 shadow-2xl flex items-center justify-center group transition duration-300 badge-pulse" aria-label="WhatsApp Contact">
+    <a href="#" data-wa="سلام! میں اکویا گارمنٹس کے بارے میں معلومات لیتا چاہتا ہوں۔" target="_blank" class="fixed bottom-6 left-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-4 shadow-2xl flex items-center justify-center group transition duration-300 badge-pulse" aria-label="WhatsApp Contact">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
         <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out font-semibold text-sm pr-0 group-hover:pr-3 group-hover:pl-2">
             واٹس ایپ پر رابطہ کریں
@@ -351,44 +351,8 @@
         document.getElementById('year').textContent = new Date().getFullYear();
 
         // Product Catalog Data
-        const products = [
-            {
-                id: 1,
-                name: "لائٹ بلیو ڈریس",
-                englishName: "Light Blue Dress",
-                price: 50,
-                image: "220011125_lbl_bk.webp",
-                fallbackImage: "https://placehold.co/400x500/e0f2fe/0369a1?text=Light+Blue+Dress",
-                desc: "خوبصورت سکیلپڈ کالر اور شاندار نیلے رنگ کا کلاسک ڈریس۔"
-            },
-            {
-                id: 2,
-                name: "وائٹ لیس ڈریس",
-                englishName: "White Lace Dress",
-                price: 50,
-                image: "219996065_wht_bk.webp",
-                fallbackImage: "https://placehold.co/400x500/f3f4f6/374151?text=White+Lace+Dress",
-                desc: "نفیس وائٹ لیس اور پھولوں کے ڈیزائن کے ساتھ دلکش لباس۔"
-            },
-            {
-                id: 3,
-                name: "خوبصورت ریڈ ڈریس",
-                englishName: "Red Dress",
-                price: 50,
-                image: "219512685_red_bk.webp",
-                fallbackImage: "https://placehold.co/400x500/fee2e2/b91c1c?text=Red+Dress",
-                desc: "چمکدار سرخی اور پیٹر پین کالر کے ساتھ ایک شاندار فینسی ڈریس۔"
-            },
-            {
-                id: 4,
-                name: "فلورل پنک میکس",
-                englishName: "Floral Pink Dress",
-                price: 50,
-                image: "219794136_lpi_in.webp",
-                fallbackImage: "https://placehold.co/400x500/fce7f3/be185d?text=Floral+Pink+Maxi",
-                desc: "خوبصورت پھولوں کے پرنٹ کے ساتھ لمبی اور دلکش پنک ڈریس۔"
-            }
-        ];
+        let products = [];
+        let WA = '923218800544';
 
         let cart = [];
         let currentModalProduct = null;
@@ -402,7 +366,7 @@
                 <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-rose-100/60 flex flex-col group">
                     <div class="relative overflow-hidden bg-rose-50 aspect-[4/5] cursor-pointer" onclick="openQuickView(${product.id})">
                         <img src="${product.image}" 
-                             alt="${product.name}" 
+                             alt="${esc(product.name)}" 
                              class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
                              onerror="this.src='${product.fallbackImage}'">
                         <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-rose-600 font-extrabold px-3 py-1 rounded-full text-xs shadow-md">
@@ -422,7 +386,7 @@
                         </div>
 
                         <div class="space-y-2">
-                            <button onclick="directOrderWhatsApp('${product.name}', ${product.price})" 
+                            <button onclick="directOrderWhatsApp(${product.id})" 
                                     class="w-full py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-md shadow-emerald-100 transition flex items-center justify-center gap-2 text-sm">
                                 <i class="fa-brands fa-whatsapp text-lg"></i>
                                 واٹس ایپ پر آرڈر کریں
@@ -439,9 +403,12 @@
         }
 
         // WhatsApp Direct Order for Single Item
-        function directOrderWhatsApp(name, price) {
+        function directOrderWhatsApp(id) {
+            const p = products.find(x => x.id === id);
+            if (!p) return;
+            const name = p.name, price = p.price;
             const message = `سلام! میں اکویا گارمنٹس سے یہ ڈریس خریدنا چاہتا/چاہتی ہوں:\n\n*ڈریس:* ${name}\n*قیمت:* $${price} USD\n\nبرائے مہربانی باقی کی تفصیلات فراہم کریں۔`;
-            const encodedUrl = `https://wa.me/923218800544?text=${encodeURIComponent(message)}`;
+            const encodedUrl = `https://wa.me/${WA}?text=${encodeURIComponent(message)}`;
             window.open(encodedUrl, '_blank');
         }
 
@@ -484,7 +451,7 @@
         function orderModalViaWhatsApp() {
             if (!currentModalProduct) return;
             const message = `سلام! میں اکویا گارمنٹس سے یہ ڈریس آرڈر کرنا چاہتا/چاہتی ہوں:\n\n*ڈریس:* ${currentModalProduct.name}\n*سائز:* ${selectedSize}\n*تعداد:* ${modalQty}\n*کل قیمت:* $${currentModalProduct.price * modalQty} USD\n\nبرائے مہربانی مجھے آرڈر پروسیسنگ کی تفصیل بتائیں۔`;
-            window.open(`https://wa.me/923218800544?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/${WA}?text=${encodeURIComponent(message)}`, '_blank');
             closeQuickView();
         }
 
@@ -585,11 +552,53 @@
 
             message += `\n*کل رقم:* $${totalPrice} USD\n\nبرائے مہربانی مجھے ڈیلیوری اور پیمنٹ کا طریقہ کار بتائیں۔`;
 
-            window.open(`https://wa.me/923218800544?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/${WA}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        function esc(s) {
+            return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+        }
+
+        // Load all editable content (texts, hero images, dresses) from content.json
+        async function loadContent() {
+            try {
+                const res = await fetch('content.json', { cache: 'no-cache' });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                const data = await res.json();
+                const site = data.site || {};
+
+                if (site.whatsapp) WA = String(site.whatsapp).replace(/\D/g, '');
+
+                document.querySelectorAll('[data-key]').forEach(el => {
+                    const v = site[el.dataset.key];
+                    if (v !== undefined && v !== null && v !== '') el.textContent = v;
+                });
+
+                (data.hero_images || []).forEach((src, i) => {
+                    const img = document.querySelector('[data-hero="' + i + '"]');
+                    if (img && src) img.src = src;
+                });
+
+                products = (data.products || []).map((p, i) => ({
+                    id: i + 1,
+                    name: p.name || '',
+                    englishName: p.englishName || '',
+                    price: Number(p.price) || 0,
+                    image: p.image || '',
+                    desc: p.desc || '',
+                    fallbackImage: 'https://placehold.co/400x500/fce7f3/be185d?text=' + encodeURIComponent(p.englishName || 'Dress').replace(/'/g, '%27')
+                }));
+            } catch (err) {
+                console.error('content.json load failed:', err);
+            }
+            document.querySelectorAll('a[data-wa]').forEach(a => {
+                a.href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(a.dataset.wa);
+            });
         }
 
         // Initial Load
-        window.onload = function() {
+        window.onload = async function() {
+            await loadContent();
             renderProducts();
             updateCartUI();
         };
