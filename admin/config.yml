@@ -1,16 +1,54 @@
+# ⚠️ نیچے والی لائن میں اپنا GitHub یوزرنیم اور ریپوزٹری کا نام لکھیں
 backend:
-  name: git-gateway
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
   branch: main
 
+# نئی اپلوڈ شدہ تصویریں اسی فولڈر میں محفوظ ہوں گی
 media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "site"
+    label: "اکویا گارمنٹس"
     files:
-      - file: "index.html"
-        label: "Home Page"
-        name: "index"
+      - name: "content"
+        label: "سائٹ کا مواد"
+        file: "content.json"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - label: "ٹیکسٹ"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "اوپر کی پٹی (اعلان)", name: "announcement", widget: "string" }
+              - { label: "ہیرو: چھوٹا بیج", name: "hero_badge", widget: "string" }
+              - { label: "ہیرو عنوان: پہلا حصہ", name: "hero_title_start", widget: "string" }
+              - { label: "ہیرو عنوان: رنگین لفظ", name: "hero_title_highlight", widget: "string" }
+              - { label: "ہیرو عنوان: آخری حصہ", name: "hero_title_end", widget: "string" }
+              - { label: "ہیرو: تعارفی پیراگراف", name: "hero_text", widget: "text" }
+              - { label: "کلیکشن کا عنوان", name: "products_title", widget: "string" }
+              - { label: "کلیکشن کی ذیلی سطر", name: "products_subtitle", widget: "text" }
+              - { label: "واٹس ایپ نمبر (لنک کے لیے، بغیر + کے، مثلاً 923218800544)", name: "whatsapp", widget: "string" }
+              - { label: "واٹس ایپ نمبر (دکھانے کے لیے)", name: "whatsapp_display", widget: "string" }
+              - { label: "فون نمبر (دکھانے کے لیے)", name: "phone_display", widget: "string" }
+              - { label: "ای میل", name: "email", widget: "string" }
+              - { label: "فوٹر: تعارف", name: "footer_about", widget: "text" }
+
+          - label: "ہیرو (اوپر والے صفحے) کی تصویریں - زیادہ سے زیادہ 4"
+            name: "hero_images"
+            widget: "list"
+            min: 4
+            max: 4
+            field: { label: "تصویر", name: "image", widget: "image" }
+
+          - label: "ڈریسز (زیادہ سے زیادہ 50)"
+            name: "products"
+            widget: "list"
+            max: 50
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "نام (اردو)", name: "name", widget: "string" }
+              - { label: "انگریزی نام (تصویر نہ ملے تو دکھایا جاتا ہے)", name: "englishName", widget: "string", required: false }
+              - { label: "قیمت (USD)", name: "price", widget: "number", value_type: "int", min: 1, default: 50 }
+              - { label: "تصویر", name: "image", widget: "image" }
+              - { label: "تفصیل", name: "desc", widget: "text" }
